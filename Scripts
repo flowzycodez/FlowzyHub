@@ -1,0 +1,24 @@
+-- SCRIPT HUB CONFIG
+local hubScripts = {
+    -- Format: ["GitHubPath"] = {PlaceId1, PlaceId2, ...}
+    ["jaymark322/Auto-Win/refs/heads/main/run%2010000%20studs%20to%20win"] = {90207068289916},
+}
+
+-- AUTO LOAD SCRIPT
+for path, ids in pairs(hubScripts) do
+    for _, placeId in ipairs(ids) do
+        if game.PlaceId == placeId then
+            local success, response = pcall(function()
+                return game:HttpGet("https://raw.githubusercontent.com/" .. path)
+            end)
+
+            if success then
+                loadstring(response)()
+            else
+                warn("Failed to load script from: " .. path .. " | Error: " .. response)
+            end
+
+            break -- Stop checking other PlaceIds once matched
+        end
+    end
+end
