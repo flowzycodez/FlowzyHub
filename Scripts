@@ -4,6 +4,7 @@ local hubScripts = {
     ["jaymark322/Auto-Win/refs/heads/main/run%2010000%20studs%20to%20win"] = {90207068289916},
 ["jaymark322/FlowzyHub/refs/heads/main/Math%20Murder"] = {127707120843339},
 ["jaymark322/FlowzyHub/refs/heads/main/Growing%20Simulator"] = {1215391183},
+["flowzycodez/FlowzyHub/refs/heads/main/The%20Glass%20Bridge"] = {8032701413},
 }
 
 -- AUTO LOAD SCRIPT
